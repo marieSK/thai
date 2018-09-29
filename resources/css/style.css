@@ -1,0 +1,237 @@
+html{
+  font-size: 16px;
+}
+body{
+  font-family: 'Dosis', 'Helvetica', sans-serif;
+  letter-spacing: 0.1em;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+h1{
+  font-size: 6rem;
+  font-weight: bold;
+}
+h2{
+  font-size: 5rem;
+  font-weight: bold;
+}
+h3{
+  font-size: 3rem;
+  font-weight: bold;
+}
+h4 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+h5{
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+h6{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+p{
+  font-size: 1rem;
+}
+img{
+  height: 100%;
+  width: auto;
+}
+
+
+nav{
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 3rem;
+  width: 100%;
+  background: rgba(97, 154, 71, 0.5);
+}
+.logo{
+  display: flex;
+  align-items: center;
+  height: 100%;
+  margin-left: 6rem;
+  color: rgb(249,24,0);
+  font-family: 'Montez', cursive;
+}
+.navigation ul{
+  margin-right: 6rem;
+  margin-bottom: 0;     /*overwrite Bootstrap*/
+}
+.navigation li {
+  display: inline-block;
+  margin-left: 2rem;
+  font-size: 1.25rem;
+}
+.navigation a{
+  color: #F9F3E9;
+}
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+  #links {
+    display: none;
+  }
+  nav{
+    justify-content: center;
+  }
+  .logo{
+    margin: 0;
+  }
+}
+
+
+header{
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url(../images/dishes.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+  width: 100%;
+  color: #F9F3E9;
+}
+header h1{
+  font-family: 'Montez', cursive;
+  display: block;
+  margin-top: 4rem;
+  text-shadow: 0.4rem 0.4rem black;
+}
+.btn{
+  margin-top: 18rem;
+  background-color: rgb(249,24,0);
+  border: 0;
+  font-weight: bold;
+  color: #F9F3E9;
+}
+@media only screen and (max-width: 767px) {
+  header{
+    flex-direction: column;
+  }
+  header h1{
+    margin: 0;
+  }
+  .btn{
+    margin: 0;
+  }
+}
+
+
+main{
+  position: relative;
+  top: 44rem;
+  text-align: center;
+}
+.cont{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title img{
+  width: 2rem;
+  margin: 1rem;
+}
+.flower{
+  width: 2rem;
+  margin: 4rem 1rem;
+}
+
+
+.image-container img{
+  width: auto;
+  height: 15rem;
+}
+
+.speisekarte{
+  padding-top: 4rem;
+}
+
+
+.phrase{
+  display: flex;
+  align-items: center;
+  height: 25rem;
+  background-image: url(../images/board.jpg);
+}
+.phrase h3{
+  color: #F9F3E9;
+  font-family: 'Homemade Apple', cursive;
+  line-height: 1.8;
+}
+@media only screen and (max-width: 767px) {
+  .phrase h3{
+    font-size: 25px;
+  }
+}
+
+
+.bewertungen{
+  padding-top: 4rem;
+  display: flex;
+  justify-content: center;
+  text-align: left;
+}
+.bew{
+  margin: 0 3rem;
+  background-color: rgba(56,183,255,0.2);
+  border-radius: 8%;
+  padding: 2rem;
+}
+.bew img{
+  width: 5rem;
+  height: auto;
+  margin: 1rem;
+  float: left;
+  border-radius: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .bewertungen{
+    flex-direction: column;
+  }
+  .bew{
+    margin: 2rem;
+  }
+}
+
+
+.kontakt{
+  padding-top: 4rem;
+}
+.address{
+  text-align: left;
+}
+.zeiten{
+  text-align: right;
+}
+i{
+  margin: 0.8rem;
+}
+
+
+footer{
+  position: relative;
+  top: 48rem;
+  background-color: #3D3732;
+  color: #F9F3E9;
+}
+footer p{
+  display: block;
+  padding: 1rem 0 1rem 2rem;
+  margin: 0;
+}
